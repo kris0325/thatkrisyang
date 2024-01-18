@@ -1,3 +1,6 @@
 [submodule "thatkrisyangblog/themes/hugo-bearblog"]
 	path = thatkrisyangblog/themes/hugo-bearblog
 	url = git@github.com:janraasch/hugo-bearblog.git
+[submodule "thatkrisyangblog/themes/PaperMod"]
+	path = thatkrisyangblog/themes/PaperMod
+	url = git@github.com:adityatelange/hugo-PaperMod.git

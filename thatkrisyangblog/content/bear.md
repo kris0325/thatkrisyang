@@ -1,6 +1,7 @@
 +++
 title = "Bear"
 menu = "main"
+draft = true
 +++
 
 # Bear

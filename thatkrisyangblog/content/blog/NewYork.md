@@ -6,5 +6,3 @@ draft = false
 
 # people
 # economy
-
-git remote add origin git@github.com:kris0325/kris0325.github.io.git

@@ -1,6 +1,7 @@
 +++
 title = "Hugo"
 menu = "main"
+draft = true
 +++
 
 # Hugo
