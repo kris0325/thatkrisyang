@@ -1,3 +1,8 @@
-# bear
-
-[Go to the original bear blog](https://bearblog.dev/).
+---
+menu:
+    main:
+        name: Home
+        weight: -100
+        params:
+            icon: home
+---

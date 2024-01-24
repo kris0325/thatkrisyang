@@ -4,3 +4,9 @@
 [submodule "thatkrisyangblog/themes/PaperMod"]
 	path = thatkrisyangblog/themes/PaperMod
 	url = git@github.com:adityatelange/hugo-PaperMod.git
+[submodule "thatkrisyangblog/themes/stack"]
+	path = thatkrisyangblog/themes/stack
+	url = git@github.com:CaiJimmy/hugo-theme-stack-starter.git
+[submodule "thatkrisyangblog/themes/hugo-theme-stack"]
+	path = thatkrisyangblog/themes/hugo-theme-stack
+	url = git@github.com:CaiJimmy/hugo-theme-stack.git
