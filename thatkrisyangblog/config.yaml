@@ -2,29 +2,22 @@ baseurl: https://example.com
 languageCode: en-us
 theme: hugo-theme-stack
 paginate: 5
-title: Example Site
-copyright: Example Person
+title: thatkrisyang
+copyright: thatkrisyang
 
 languages:
     en:
         languageName: English
-        title: Example Site
+        title: thatkrisyang
         weight: 1
         params:
             description: Example description
     zh-cn:
         languageName: 中文
-        title: 演示站点
+        title: thatkrisyang
         weight: 2
         params:
             description: 演示说明
-    ar:
-        languageName: عربي
-        languagedirection: rtl
-        title: موقع تجريبي
-        weight: 3
-        params:
-            description: وصف تجريبي
 
 # Change it to your Disqus shortname before using
 disqusShortname: hugo-theme-stack
@@ -61,7 +54,7 @@ params:
 
     sidebar:
         emoji: 🍥
-        subtitle: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        subtitle: thatkrisyang.
         avatar:
             enabled: true
             local: true
@@ -203,7 +196,7 @@ menu:
     social:
         - identifier: github
           name: GitHub
-          url: https://github.com/CaiJimmy/hugo-theme-stack
+          url: https://github.com/kris0325
           params:
               icon: brand-github
 

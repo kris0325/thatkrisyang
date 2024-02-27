@@ -5,7 +5,7 @@ slug: hello-world
 date: 2024-01-24
 image: fall.jpg
 categories:
-    - tool
+    - blog
 tags:
     - hugo blog
 weight: 1       # You can add weight to some posts to override the default sorting (date descending)
