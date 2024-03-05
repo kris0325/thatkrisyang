@@ -1,6 +1,6 @@
 ---
 title: 216.Combination Sum III
-description: 90.subsets-ii
+description: 216.Combination Sum III
 slug: 216.Combination Sum III
 date: 2024-02-27
 image: 216.jpg
