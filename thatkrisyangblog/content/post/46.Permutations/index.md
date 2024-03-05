@@ -1,6 +1,6 @@
 ---
 title: 46.Permutations
-description: 90.subsets-ii
+description: 46.Permutations
 slug: 46.Permutations
 date: 2024-03-05
 image: 46.jpg
