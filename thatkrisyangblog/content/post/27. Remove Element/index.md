@@ -1,13 +1,14 @@
 ---
 title: 27. Remove Element
-description: 27. Remove Element
+description: array | two-pointers
 slug: 27. Remove Element
 date: 2024-03-23
 image: 27.png
 categories:
     - leetcode
 tags:
-    - array | two-pointers
+    - array
+    - two-pointers
 weight: 1       # You can add weight to some posts to override the default sorting (date descending)
 ---
 
