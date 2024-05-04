@@ -2,7 +2,7 @@
 title: 160. Intersection of Two Linked Lists
 description: 160. Intersection of Two Linked Lists
 slug: 160. Intersection of Two Linked Lists
-date: 2024-04-28
+date: 2024-05-03
 image: 160.png
 categories:
     - leetcode
@@ -12,7 +12,6 @@ weight: 1       # You can add weight to some posts to override the default sorti
 ---
 
 ```
-
 /*
  * @lc app=leetcode id=160 lang=java
  *
