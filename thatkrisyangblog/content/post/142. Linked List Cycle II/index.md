@@ -1,6 +1,6 @@
 ---
 title: 142. Linked List Cycle II
-description: 142. Linked List Cycle II
+description: 142.Linked List Cycle II
 
 slug: 142. Linked List Cycle II
 
@@ -132,9 +132,7 @@ public class Solution {
                     index2 = index2.next;
                 }
                 //index1與index2在環的入口處相遇
-                if(index1 == index2){
-                    return index1;
-                }
+                return index1;
             }
         }
         return null;    
