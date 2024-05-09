@@ -9,12 +9,14 @@ image: 242.png
 categories:
     - leetcode
 tags:
-    - hash-table | sort
+    - hashtable
 weight: 1       # You can add weight to some posts to override the default sorting (date descending)
 ---
 
+<https://leetcode.com/problems/valid-anagram/description/>
+
+
 ```
- https://leetcode.com/problems/valid-anagram/description/
 
 Category	Difficulty	Likes	Dislikes
 algorithms	Easy (64.48%)	11937	394
@@ -58,6 +60,9 @@ Follow up: What if the inputs contain Unicode characters? How would you adapt yo
  *    当最终哈希表中所有字符对应的统计数值为0，则互为重排。
  */
 
+```
+
+```java
 // @lc code=start
 
 import java.util.HashMap;
