@@ -6,7 +6,6 @@ date: 2024-05-06
 image: 19.png
 categories:
     - leetcode
-    - two-pointers
 tags:
     - linked-list
 weight: 1       # You can add weight to some posts to override the default sorting (date descending)
