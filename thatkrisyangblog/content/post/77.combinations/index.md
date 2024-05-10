@@ -7,7 +7,7 @@ date: 2024-01-25
 categories:
     - leetcode
 tags:
-    - combination
+    - combinations
 weight: 1       # You can add weight to some posts to override the default sorting (date descending)
 ---
 
