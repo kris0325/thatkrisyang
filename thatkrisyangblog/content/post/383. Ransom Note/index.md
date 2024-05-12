@@ -4,7 +4,7 @@ description: 383. Ransom Note
 
 slug: 383. Ransom Note
 
-date: 2024-05-12i
+date: 2024-05-12
 image: 383.png
 categories:
     - leetcode
@@ -126,7 +126,7 @@ class Solution2 {
 
 ```
 /*
-*
+* 时间复杂度, 空间复杂度分析
 Solution1的时间复杂度为O(m + n)，其中m为ransomNote字符串的长度，n为magazine字符串的长度。在该解决方案中，首先需要遍历ransomNote和magazine字符串各一次，然后需要遍历ransomNoteMap中的键值对，因此总的时间复杂度为O(m + n)。
 
 Solution2的时间复杂度也为O(m + n)，其中m为ransomNote字符串的长度，n为magazine字符串的长度。在该解决方案中，首先需要遍历magazine字符串和ransomNote字符串各一次，然后遍历record数组，因此总的时间复杂度为O(m + n)。
