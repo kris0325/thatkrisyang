@@ -56,7 +56,7 @@ Constraints:
 ```
 
 > 思路：
- 与15.3sum 很像，也是使用双枝针，只需再加一成for循环即可.
+ 与15.3sum 很像，也是使用双指针，只需再加一成for循环即可.
  另外，需要注意剪枝，与去重
   <https://leetcode.com/problems/3sum/description/>
 
