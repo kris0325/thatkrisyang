@@ -12,6 +12,7 @@ weight: 1       # You can add weight to some posts to override the default sorti
 ---
 
 
+```
 /*
  * @lc app=leetcode id=90 lang=java
  *
@@ -60,7 +61,9 @@ weight: 1       # You can add weight to some posts to override the default sorti
  *                2 画出树形图，从图中可以看出，同一树层上重复取2 就要过滤掉，
  *                 同一树枝上就可以重复取2，因为同一树枝上元素的集合才是唯一子集！
  */
+```
 
+``` java
 // @lc code=start
 
 import java.util.ArrayList;
@@ -135,4 +138,8 @@ class Solution {
 
 
 // @lc code=end
+
+```
+
+
 

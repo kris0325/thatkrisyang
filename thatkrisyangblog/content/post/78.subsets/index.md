@@ -65,6 +65,9 @@ weight: 1       # You can add weight to some posts to override the default sorti
  * 问题拆分成 从n个元素的数组中选者k个元素的素全组合, 再收集所有组合即可
  */
 
+```
+
+```java
 // @lc code=start
 
 import java.util.ArrayList;
@@ -95,6 +98,5 @@ class Solution {
     }
 }
 // @lc code=end
-
 
 ```

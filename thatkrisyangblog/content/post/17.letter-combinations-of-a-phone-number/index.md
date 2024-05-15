@@ -3,7 +3,7 @@ title: 17.letter-combinations-of-a-phone-number
 description: 17.letter-combinations-of-a-phone-number
 slug: 17.letter-combinations-of-a-phone-number
 date: 2024-01-25
-# image: 90.jpg
+image: 17.png
 categories:
     - leetcode
 tags:
