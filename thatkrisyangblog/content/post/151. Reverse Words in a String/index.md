@@ -74,24 +74,11 @@ Follow-up: If the string data type is mutable in your language, can you solve it
        stack實現reverse
  *    1，先遍歷字符串數組，剪切掉space，取出word按順序存入stack；
  *    2，stack pop出world，加上space拼接成字符串
-
-     
-     solution2:
-      雙指針法
-      與344. Reverse String思路一致，
-      1.先反轉字符串，這時單詞也被反轉了
-      2.再反轉單詞，剪切空格
- *
- * 
- * 
- * 
- * 
  * */
 ```
 
 ```java
 // @lc code=start
-// import com.google.common.base.Splitter;`
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
@@ -111,7 +98,88 @@ class Solution {
         return String.join(" ", list);
     }
 }
+```
 
+```
+/*
+ *   Follow-up: If the string data type is mutable in your language, can you
+ * solve it in-place with O(1) extra space?
+ * 
+ *   思路：雙指針法
+ *        與344. Reverse String思路一致，
+ *    1.先剪切首尾空格與中間多餘空格
+      2.先反轉字符串，這時單詞也被反轉了
+      3.再反轉單詞
+
+      注意：處理// 反转最后一个单词
+ *
+ * 
+ * 
+ * 
+ * 
+ * */
+```
+
+
+
+```java
+class Solution {
+    public String reverseWords(String s) {
+        // 将字符串转换为字符数组
+        char[] schar = s.toCharArray();
+        // 字符数组的长度
+        int length = schar.length;
+        // 去除首尾和中间多余的空格
+        int slow = 0; // 慢指针，记录新字符串的长度
+        int fast = 0; // 快指针，遍历原始字符串
+        while (fast < length) {
+            // 跳过前导空格
+            while (fast < length && schar[fast] == ' ') fast++;
+            // 将非空字符移到慢指针位置
+            if (slow > 0 && fast < length) {
+                schar[slow++] = ' ';
+            }
+            // 将单词复制到新字符串
+            while (fast < length && schar[fast] != ' ') {
+                schar[slow++] = schar[fast++];
+            }
+        }
+        
+        // 反转整个字符串
+        reverseString(schar, 0, slow - 1);
+        
+        // 反转各个单词
+        int start = 0; // 单词起始位置
+        for (int i = 0; i < slow; i++) {
+            if (schar[i] == ' ') {
+                // 反转单词
+                reverseString(schar, start, i - 1);
+                // 更新单词起始位置
+                start = i + 1;
+            }
+        }
+        // 反转最后一个单词
+        reverseString(schar, start, slow - 1);
+        
+        // 将字符数组转换为字符串
+        return new String(schar, 0, slow);
+    }
+
+    // 反转字符数组的指定区间
+    public void reverseString(char[] schar, int start, int end) {
+        while (start < end) {
+            char tmp = schar[start];
+            schar[start] = schar[end];
+            schar[end] = tmp;
+            start++;
+            end--;
+        }
+    }
+}
 // @lc code=end
 ```
+
+ 
+
+
 
