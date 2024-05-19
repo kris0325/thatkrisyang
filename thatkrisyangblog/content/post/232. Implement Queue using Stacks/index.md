@@ -9,8 +9,10 @@ image: 232.png
 categories:
     - leetcode
     - Stack
+    - Queue
 tags:
     - Stack
+    - Queue
 weight: 1       # You can add weight to some posts to override the default sorting (date descending)
 ---
 
