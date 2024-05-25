@@ -18,7 +18,6 @@ weight: 1       # You can add weight to some posts to override the default sorti
 <https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/description/>
 
 ```
-1047. Remove All Adjacent Duplicates In String
 Solved
 Easy
 Topics
