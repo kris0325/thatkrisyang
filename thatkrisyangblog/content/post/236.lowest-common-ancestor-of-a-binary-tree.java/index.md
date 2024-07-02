@@ -11,6 +11,7 @@ categories:
     - Binary Tree
 tags:
     - DFS
+    - Medium
     - amazon 
     - apple 
     - facebook 
