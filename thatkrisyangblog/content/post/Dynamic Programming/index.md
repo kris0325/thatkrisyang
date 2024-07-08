@@ -59,7 +59,10 @@ weight: 1       # You can add weight to some posts to override the default sorti
 
 # DP Questions List
 [62. Unique Paths](https://kris0325.github.io/p/62.-unique-paths/)
+
 [63. Unique Paths ii]()
+
 [70. Climbing Stairs](https://kris0325.github.io/p/70.-climbing-stairs/)
+
 [746. Min Cost Climbing Stairs](https://kris0325.github.io/p/746.-min-cost-climbing-stairs/)
 

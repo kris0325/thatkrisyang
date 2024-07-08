@@ -1,6 +1,6 @@
 ---
 title: 78.subsets
-description: 78.subsets
+description: 78.子集
 slug: 78.subsets
 date: 2024-01-25
 # image: 90.jpg
@@ -72,7 +72,44 @@ weight: 1       # You can add weight to some posts to override the default sorti
 
 import java.util.ArrayList;
 
+/*
+其实可以不需要加终止条件，因为startIndex >= nums.size()，本层for循环本来也结束了。
+
+单层搜索逻辑
+求取子集问题，不需要任何剪枝！因为子集就是要遍历整棵树。
+*/
 class Solution {
+    //backtracking: subset子集问题：
+    List<List<Integer>> result = new ArrayList<>();
+    List<Integer> path = new ArrayList<>();
+    public List<List<Integer>> subsets(int[] nums) {
+        backtracking(nums, 0);
+        return result;
+    }
+    
+    public void backtracking(int nums[], int startIndex) {
+        result.add(new Arraylist<>(path));
+        /*
+可以不需要加终止条件，因为startIndex >= nums.size()，本层for循环本来也结束了。
+单层搜索逻辑
+求取子集问题，不需要任何剪枝！因为子集就是要遍历整棵树。
+*/
+        for (int i = startIndex; i < nums.length; i++) {
+            path.add(nums[i]);
+            backtracking(nums, i + 1);
+            path.removeLast();
+        }
+    }
+}
+
+    
+
+// @lc code=end
+
+
+```java
+// @lc code=start
+class Solution1 {
     public List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> subsets = new ArrayList<>();
         for(int k = 0; k <= nums.length; k++){
