@@ -3,13 +3,14 @@ title: greedy algorithm
 description: greedy algorithm
 slug: greedy algorithm
 date: 2024-07-03
-image: greedyAlgorithm.png
+image: greedy.png
 categories:
     - leetcode
 tags:
     - greedy algorithm
 weight: 1       # You can add weight to some posts to override the default sorting (date descending)
 ---
+<img src="./greedyAlgorithm.png" name="greedyAlgorithm">
 
 # 什么是贪心
 **贪心的本质是选择每一阶段的局部最优，从而达到全局最优。**
@@ -34,10 +35,14 @@ weight: 1       # You can add weight to some posts to override the default sorti
 # 贪心一般解题步骤
 贪心算法一般分为如下四步：
 
-**1. 将问题分解为若干个子问题
-2. 找出适合的贪心策略
-3. 求解每一个子问题的最优解
-4. 将局部最优解堆叠成全局最优解**
+**1. 将问题分解为若干个子问题**
+
+**2. 找出适合的贪心策略**
+
+**3. 求解每一个子问题的最优解**
+
+**4. 将局部最优解堆叠成全局最优解**
+
 这个四步其实过于理论化了，我们平时在做贪心类的题目 很难去按照这四步去思考，真是有点“鸡肋”。
 
 做题的时候，只要想清楚 局部最优 是什么，如果推导出全局最优，其实就够了。

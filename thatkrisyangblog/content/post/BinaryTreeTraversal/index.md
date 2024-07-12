@@ -10,7 +10,7 @@ tags:
   - Binary Tree
 weight: 1       # You can add weight to some posts to override the default sorting (date descending)
 ---
-
+## 二叉樹的遍歷，常規遞歸與迭代實現
 **二叉樹前序遍歷**
 
 [144.binary-tree-preorder-traversal.java](https://kris0325.github.io/p/144.binary-tree-preorder-traversal.java/)
@@ -23,9 +23,9 @@ weight: 1       # You can add weight to some posts to override the default sorti
 
 [145.binary-tree-postorder-traversal.java](https://kris0325.github.io/p/145.binary-tree-postorder-traversal.java/)
 
-# 二叉樹的前，中，后遍遍历，遞歸與迭代實現
 
-## 二叉樹前序遍歷
+
+### 二叉樹前序遍歷
 
 [144.binary-tree-preorder-traversal.java](https://kris0325.github.io/p/144.binary-tree-preorder-traversal.java/)
 
@@ -80,7 +80,7 @@ class Solution {
 // @lc code=end
 ```
 
-## 二叉樹中序遍歷
+### 二叉樹中序遍歷
 
 [94.binary-tree-inorder-traversal.java](https://kris0325.github.io/p/94.binary-tree-inorder-traversal.java/)
 
@@ -140,7 +140,7 @@ class Solution {
 }
 ```
 
-## 二叉樹後序遍歷
+### 二叉樹後序遍歷
 
 [145.binary-tree-postorder-traversal.java](https://kris0325.github.io/p/145.binary-tree-postorder-traversal.java/)
 
@@ -227,7 +227,7 @@ class Solution {
 此时我们用迭代法写出了二叉树的前后中序遍历，大家可以看出前序和中序是完全两种代码风格，并不像递归写法那样代码稍做调整，就可以实现前后中序。
 **这是因为前序遍历中访问节点（遍历节点）和处理节点（将元素放进result数组中）可以同步处理，但是中序就无法做到同步！**
 
-# 二叉樹的迭代遍歷統一寫法
+## 二叉樹的迭代遍歷統一寫法
 
 > 在二叉树：听说递归能做的，栈也能做！
 > 中提到说使用栈的话，无法同时解决访问节点（遍历节点）和处理节点（将元素放进结果集）不一致的情况。
@@ -238,7 +238,7 @@ class Solution {
 
 #
 
-## 前序遍歷的遞歸實現
+### 前序遍歷的遞歸實現
 ```java
 /*
  * 前序遍歷 中-左-右，基於標記法遞歸實現
@@ -279,7 +279,7 @@ class Solution {
 ```
 
 
-## 中序遍歷的遞歸實現
+### 中序遍歷的遞歸實現
 
 ```java
 /*
@@ -322,7 +322,7 @@ class Solution {
 
 ```
 
-## 後序遍歷的遞歸實現
+### 後序遍歷的遞歸實現
 
 ```java
 /*

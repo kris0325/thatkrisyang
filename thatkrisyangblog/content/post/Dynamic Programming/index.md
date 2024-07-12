@@ -3,13 +3,15 @@ title: dynamic programming
 description: dynamic programming
 slug: dynamic programming
 date: 2024-07-03
-image: dp.jpg
+image: dynamicProgramming.png
 categories:
     - leetcode
 tags:
     - DP
 weight: 1       # You can add weight to some posts to override the default sorting (date descending)
 ---
+
+<img src="./dp.jpg" alt="動態規劃">
 # 什么是动态规划
 动态规划，英文：Dynamic Programming，简称DP，如果某一问题有很多重叠子问题，使用动态规划是最有效的。
 
