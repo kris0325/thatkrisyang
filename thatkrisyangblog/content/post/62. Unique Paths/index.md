@@ -1,18 +1,19 @@
 --- 
 title:  62. Unique Paths
-description:  62. Unique Paths
+description:  62. 不同路徑
 
 slug:  62. Unique Paths
 
 date: 2024-06-22
 image: 62.png
 categories:
-    - leetcode
-    - DP
+    - Leetcode
 tags:
     - DP
+    - Medium
 weight: 1       # You can add weight to some posts to override the default sorting (date descending)
 ---
+
 ```
 Unique Paths
 Category	Difficulty	Likes	Dislikes

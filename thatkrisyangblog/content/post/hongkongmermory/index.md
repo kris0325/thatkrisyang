@@ -5,9 +5,9 @@ slug: Hong Kong Memories
 date: 2024-01-24
 image: 1.jpg
 categories:
-    - Hong Kong
-tags:
     - travel
+tags:
+    - Hong Kong
 weight: 1       # You can add weight to some posts to override the default sorting (date descending)
 ---
 

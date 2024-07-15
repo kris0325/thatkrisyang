@@ -9,7 +9,7 @@ image: 383.png
 categories:
     - leetcode
 tags:
-    - hashtable
+    - HashMap
 weight: 1       # You can add weight to some posts to override the default sorting (date descending)
 ---
 
