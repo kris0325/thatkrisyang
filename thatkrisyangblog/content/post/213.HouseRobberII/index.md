@@ -12,7 +12,7 @@ tags:
     - DP
     - Medium
     - microsoft
-weight: 1       # You can add weight to some posts to override the default sorting (date descending)
+weight: 1    # You can add weight to some posts to override the default sorting (date descending)
 ---
 
 
@@ -68,7 +68,7 @@ weight: 1       # You can add weight to some posts to override the default sorti
 /*
  2024-07-12 16:35:45
 
- House Robber II
+House Robber II
 Category	Difficulty	Likes	Dislikes
 algorithms	Medium (41.96%)	9805	151
 Tags
@@ -79,14 +79,6 @@ microsoft
 */
 ```
 ```java
-
-
-class HouseRobberIi {
-    public static void main(String[] args) {
-        Solution solution = new HouseRobberIi().new Solution();
-    }
-
-    //leetcode submit region begin(Prohibit modification and deletion)
     class Solution {
         //DP: consider circle nums, nums[0], nums[length-1] are adjacent, so we can divide nums into two line new nums such as nums1: nums[0] -num[length-2] , nums2: nums[1] -num[length-1],
         // and get maximum = Math.max( rob(nums1), rob(nums2))
@@ -134,7 +126,4 @@ class HouseRobberIi {
             return dp[n - 1];
         }
     }
-//leetcode submit region end(Prohibit modification and deletion)
-
-}
 ```

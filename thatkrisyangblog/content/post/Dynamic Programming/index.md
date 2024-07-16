@@ -80,12 +80,12 @@ weight: 1       # You can add weight to some posts to override the default sorti
 
 [494. TargetSum 494. 目标和](https://kris0325.github.io/p/494.-targetsum/)
 
-[213.HouseRobberII 213.打家劫舍II](https://kris0325.github.io/p/213.HouseRobberII)
+[213.HouseRobberII 213.打家劫舍II](https://kris0325.github.io/p/213.HouseRobberII/)
 
-[198.HouseRobber 198.打家劫舍](https://kris0325.github.io/p/198.HouseRobber)
+[198.HouseRobber 198.打家劫舍](https://kris0325.github.io/p/198.HouseRobber/)
 
-[121.BestTimeToBuyAndSellStock 121.買賣股票的最佳時機](https://kris0325.github.io/p/494.-targetsum/121.BestTimeToBuyAndSellStock)
+[121.BestTimeToBuyAndSellStock 121.買賣股票的最佳時機](https://kris0325.github.io/p/121.BestTimeToBuyAndSellStock/)
 
-[121.BestTimeToBuyAndSellStockII 121.買賣股票的最佳時機II](https://kris0325.github.io/p/122.BestTimeToBuyAndSellStockII)
+[122.BestTimeToBuyAndSellStockII 122.買賣股票的最佳時機II](https://kris0325.github.io/p/122.BestTimeToBuyAndSellStockII/)
 
 
