@@ -60,11 +60,32 @@ weight: 1       # You can add weight to some posts to override the default sorti
 找问题的最好方式就是把dp数组打印出来，看看究竟是不是按照自己思路推导的！
 
 # DP Questions List
-[62. Unique Paths](https://kris0325.github.io/p/62.-unique-paths/)
+[509.fibonacci-number 斐波那契數列](https://kris0325.github.io/p/509.-fibonacci-number/)
 
-[63. Unique Paths ii]()
+[70. Climbing Stairs 70. 爬楼梯](https://kris0325.github.io/p/70.-climbing-stairs/)
 
-[70. Climbing Stairs](https://kris0325.github.io/p/70.-climbing-stairs/)
+[746. Min Cost Climbing Stairs 746.使用最小花费爬楼梯](https://kris0325.github.io/p/746.-min-cost-climbing-stairs/)
 
-[746. Min Cost Climbing Stairs](https://kris0325.github.io/p/746.-min-cost-climbing-stairs/)
+[62. Unique Paths 不同路徑 ](https://kris0325.github.io/p/62.-unique-paths/)
+
+[63. Unique Paths II 不同路徑II ](https://kris0325.github.io/p/63.-unique-paths-ii/)
+
+[343.IntegerBreak 343. 整数拆分](https://kris0325.github.io/p/343.-integerbreak/)
+
+[96.UniqueBinarySearchTrees 96.不同的二叉搜索树](https://kris0325.github.io/p/96.uniquebinarysearchtrees/)
+
+[416.PartitionEqualSubsetSum 416. 分割等和子集](https://kris0325.github.io/p/416.partitionequalsubsetsum/)
+
+[1049.LastStoneWeight II 1049.最后一块石头的重量II](https://kris0325.github.io/p/1049.laststoneweight-ii/)
+
+[494. TargetSum 494. 目标和](https://kris0325.github.io/p/494.-targetsum/)
+
+[213.HouseRobberII 213.打家劫舍II](https://kris0325.github.io/p/213.HouseRobberII)
+
+[198.HouseRobber 198.打家劫舍](https://kris0325.github.io/p/198.HouseRobber)
+
+[121.BestTimeToBuyAndSellStock 121.買賣股票的最佳時機](https://kris0325.github.io/p/494.-targetsum/121.BestTimeToBuyAndSellStock)
+
+[121.BestTimeToBuyAndSellStockII 121.買賣股票的最佳時機II](https://kris0325.github.io/p/122.BestTimeToBuyAndSellStockII)
+
 
