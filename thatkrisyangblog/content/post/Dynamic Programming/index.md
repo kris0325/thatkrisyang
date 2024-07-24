@@ -171,9 +171,9 @@ dp[j] += dp[j - nums[i]];
 
 [494. TargetSum 494. 目标和](https://kris0325.github.io/p/494.-targetsum/)
 
-[518.CoinChangeII 518. 零钱兑换 II]()
+[518.CoinChangeII 518. 零钱兑换 II](https://kris0325.github.io/p/518.coinchangeii/)
 
-[动态规划：377.组合总和Ⅳ]()
+[动态规划：377.组合总和Ⅳ](https://kris0325.github.io/p/377.combinationsumiv/)
 
 [动态规划：70. 爬楼梯进阶版（完全背包)](https://kris0325.github.io/p/70.-climbing-stairs/)
 
@@ -184,7 +184,7 @@ dp[j] = Math.max(dp[j], dp[j - weight[i]] + value[i]);
 ```
 對應題目：
 
-[动态规划：474.一和零]()
+[动态规划：474.一和零](https://kris0325.github.io/p/474.onesandzeroes/)
 
 **問裝滿背包的所需物品的最小個數**
 
@@ -193,9 +193,9 @@ dp[j] = Math.min(dp[j], dp[j - coins[i]] + 1);
 ```
 對應題目：
 
-[动态规划：322.零钱兑换]()
+[动态规划：322.零钱兑换](https://kris0325.github.io/p/322.coinchange/)
 
-[动态规划：279.完全平方数]()
+[动态规划：279.完全平方数](https://kris0325.github.io/p/279.perfectsquares/)
 
 
 ## 背包遍歷順序
