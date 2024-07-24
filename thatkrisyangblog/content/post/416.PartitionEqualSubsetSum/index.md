@@ -83,7 +83,7 @@ class PartitionEqualSubsetSum {
                     dp[j] = Math.max(dp[j], dp[j - nums[i]] + nums[i]);
 
                 }
-                //剪枝：每次完成内层loop， 立即检查当前i个元素就是否已满足条件 已寻找到可分割的sunset， i无需再遍历计算dp了
+                //剪枝：每次完成内层loop， 立即检查当前i个元素就是否已满足条件 已寻找到可分割的subset， i无需再遍历计算dp了
                 if(dp[bagWeight] == targetValue){
                     return true;
                 }

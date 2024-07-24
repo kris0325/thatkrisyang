@@ -101,21 +101,20 @@ class Solution1 {
 class Solution {
     //DP algorithm： 價格低時買入，價格高時賣出，
     public int maxProfit(int[] prices) {
-        int[][] dp = new int[prices.length][2];
-        //dp[i][0] 第i天持有股票後的最多現金
-        //dp[i][1] 第i天持有的最多現金(前一天賣掉股票)
+        int[][]dp = new int[prices.length ][2];
+        //dp[i][0] 第i天持有股票的最大利润
+        //dp[i][1] 第i天不持有股票的最大利润
 
-        //第0天買入股票，開始現金為0,那麼買入股票後的現金就是-prices[0]，所以是一個負數
+        //第0天買入股票，開始現金為0,那麼買入股票後的利潤就是-prices[0]，所以是一個負數
         dp[0][0] = -prices[0];
         int n = prices.length;
         for (int i = 1; i < n; i++) {
-            //第i天持有股票後的最多現金 = max(保持第i-1天的狀態不變 即第i - 1天持有股票後的最多現金, 第i-1天持有的最多現金-買第i天股票的錢）
+            //第i天持有股票後的最大利润 = max(第i-1天持有股票後的最大利润, 第i天持有的最多現金-第i天買入股票的錢）
             dp[i][0] = Math.max(dp[i - 1][0], dp[i - 1][1] - prices[i]);
-            //第i天持有的最多現金 = max(第i-1天持有的最多現金, 第i-1天持有股票後的最多現金+賣第i天股票的錢)
+            //第i天不持有股票的最大利润 = max(第i-1天持有的最多現金, 第i-1天持有股票後的大利润+第i天賣掉股票的錢)
             dp[i][1] = Math.max(dp[i - 1][1], dp[i - 1][0] + prices[i]);
         }
         return Math.max(dp[n - 1][0], dp[n - 1][1]);
     }
 }
-//leetcode submit region end(Prohibit modification and deletion)
 ```
