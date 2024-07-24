@@ -61,10 +61,10 @@ weight: 1       # You can add weight to some posts to override the default sorti
 
 找问题的最好方式就是把dp数组打印出来，看看究竟是不是按照自己思路推导的！
 
-# 背包問題總結
+## 背包問題總結
 <img src="./背包問題總結.png" alt="背包問題總結">
 
-## 01背包
+### 01背包
 >有n件物品和一个最多能背重量为w 的背包。第i件物品的重量是weight[i]，得到的价值是value[i] 。**每件物品只能用一次**，求解将哪些物品装入背包里物品价值总和最大。
 
 这是标准的背包问题，以至于很多同学看了这个自然就会想到背包，甚至都不知道暴力的解法应该怎么解了。
@@ -117,7 +117,7 @@ public int zeroOneBagProblem(int[] weight, int[] value, int bagWeight) {
 }
 ```
 
-## 完全背包
+### 完全背包
 >有N件物品和一个最多能背重量为W的背包。第i件物品的重量是weight[i]，得到的价值是value[i] 。每件物品都有无限个（也就是可以放入背包多次），求解将哪些物品装入背包里物品价值总和最大。
 
 **完全背包和01背包的問題區別在於，每件物品可以無限次使用**
@@ -145,13 +145,13 @@ public int completeBagProblem(int[] weight, int[] value, int bagWeight) {
 ```
 
 
-## 多重背包
+### 多重背包
 
 
 
 背包問題的五步分析都很關鍵，但確定遞推公式和遍歷順序都具有規律性，所以以下從這兩點做總結。
 
-## 背包遞推公式
+### 背包遞推公式
 
 **問能否裝滿背包（或者最多裝多少）**
 ```java
@@ -198,9 +198,9 @@ dp[j] = Math.min(dp[j], dp[j - coins[i]] + 1);
 [动态规划：279.完全平方数](https://kris0325.github.io/p/279.perfectsquares/)
 
 
-## 背包遍歷順序
+### 背包遍歷順序
 
-### 01背包
+#### 01背包
 
 在动态规划：关于01背包问题，你该了解这些！ 中我们讲解二维dp数组01背包先遍历物品还是先遍历背包都是可以的，且第二层for循环是从小到大遍历。
 
@@ -208,7 +208,7 @@ dp[j] = Math.min(dp[j], dp[j - coins[i]] + 1);
 
 一维dp数组的背包在遍历顺序上和二维dp数组实现的01背包其实是有很大差异的，大家需要注意！
 
-### 完全背包
+#### 完全背包
 
 说完01背包，再看看完全背包。
 
@@ -235,6 +235,91 @@ dp[j] = Math.min(dp[j], dp[j - coins[i]] + 1);
 **求最小数：**
 动态规划：322. 零钱兑换 、动态规划：279.完全平方数
 对于背包问题，其实递推公式算是容易的，难是难在遍历顺序上，如果把遍历顺序搞透，才算是真正理解了。
+
+## 打家劫舍
+
+**打家劫舍1**
+
+[198.HouseRobber 打家劫舍](https://kris0325.github.io/p/198.houserobber/)
+
+>打家劫舍1 动态规划：开始打家劫舍HouseRobber 中就是给一个数组相邻之间不能连着偷，如何偷才能得到最大金钱。
+
+1.确定dp数组含义
+
+dp[i]：考虑下标i（包括i）以内的房屋，最多可以偷窃的金额为dp[i]。
+
+2.确定递推公式
+```java
+//偷nums[i] ｜ 不偷nums[i]，取二者最大值即為dp[i]
+dp[i] = Math.max(dp[i-1], dp[i-2] + nums[i]);
+```
+3.dp數組初始化
+
+```java
+int[] dp = new int[nums.length];
+dp[0] = 0;
+dp[1] = Math.max(nums[0], nums[1]);
+```
+
+4.確定遍歷順序
+
+從前到後遍歷
+
+5.打印dp數組
+```java
+public int houseRobber(int[] nums){
+    if (stores == null || stores.length == 0) {
+        return 0;
+    }
+    if (stores.length == 1) {
+        return stores[0];
+    }
+    int[] dp = new int[nums.length];
+    dp[0] = 0;
+    dp[1] = Math.max(nums[0], nums[1]);
+    for (int i=2; i<nums.length;i++){
+        dp[i] = Math.max(dp[i-1], dp[i-2] + nums[i]);
+    }
+    return dp[nums.length-1];
+}
+```
+
+**打家劫舍II**
+
+[231.HouseRobberII 打家劫舍II](https://kris0325.github.io/p/213.houserobberii/)
+
+>打家劫舍II 动态规划：HouseRobberII 中就是给一个成換的数组，相邻之间不能连着偷，如何偷才能得到最大金钱。
+
+**將成環數組首尾拆開，拆分為2個數組，即轉化為打家劫舍1問題**
+
+1. 考慮包含首元素，不包含尾元素
+2. 考慮不包含首元素，包含尾元素
+3. 求case1， case2二者的最大值
+
+**打家劫舍III**
+
+
+[337.HouseRobberIII 打家劫舍III](https://kris0325.github.io/p/337.HouseRobberiii/)
+
+>打家劫舍III, HouseRobberIII中就是在一个二叉树上打家劫舍，条件一样，相鄰的不能偷
+
+**树形dp**
+
+**本题一定是要后序遍历，因为通过递归函数的返回值来做下一步计算。**
+
+与198.打家劫舍，213.打家劫舍II一样，关键是要讨论当前节点抢还是不抢。
+
+如果抢了当前节点，两个孩子就不能动，如果没抢当前节点，就可以考虑抢左右孩子（注意这里说的是“考虑”）
+
+而动态规划其实就是使用状态转移容器来记录状态的变化，这里可以使用一个长度为2的数组，记录当前节点偷与不偷所得到的的最大金钱。
+
+这道题目算是树形dp的入门题目
+
+
+## 買賣股票
+
+
+
 
 
 
