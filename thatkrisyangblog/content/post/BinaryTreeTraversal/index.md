@@ -215,7 +215,7 @@ class Solution {
                 stack.push(root.left);
             }
             if (root.right != null) {
-                stack.push(root.left);
+                stack.push(root.right);
             }
         }
         result.reversed();
@@ -326,7 +326,7 @@ class Solution {
 
 ```java
 /*
- * 後序遍歷 左-右-右，基於標記法遞歸實現
+ * 後序遍歷 左-右-中，基於標記法遞歸實現
  */
 class Solution {
     List<Integer> result = new ArrayList<>();
